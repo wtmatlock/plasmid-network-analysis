@@ -36,5 +36,5 @@ largest_cc = lcc(graph, p)
 num_cc = ncc(graph, p)
 
 pd.DataFrame({"Threshold": points, "Largest Connected Component": largest_cc[::-1],
-                   "Number of Connected Components": num_cc[::-1]}).to_csv(''/path/to/output.csv') # output df
+                   "Number of Connected Components": num_cc[::-1]}).to_csv('/path/to/output.csv') # output df
 
