@@ -5,7 +5,7 @@ The following outlines the analysis pipeline for...
 Relevant data is available on figshare:
 - Plasmid fastas: https://figshare.com/articles/dataset/incf_plasmids_fa/12652196
 - Plasmid metadata:
-- MASH output:
+- MASH output: https://figshare.com/articles/dataset/plasmid_MASH_csv/12652313
 
 **Sequence Distances**
 -
