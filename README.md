@@ -44,7 +44,7 @@ panaroo --clean-mode moderate -i *.gff -o ./ --aligner clustal -a core --core_th
 ```
 The ```--clean-mode``` flag determines the running mode, which we set to moderate. The path to the input is flagged by ```-i```, and the path to the output by ```-o```. We specified Clustal Omega (http://www.clustal.org/omega/) for aligning the core genes with ```--aligner```, which needs to be installed seperately. The ```-a``` flag specifies we only want to align the core genes, and ```--core_threshold``` specifies the core gene presence threshold at 99%. Finally, ```-t``` specifies the number of threads as 16.
 
-Specifically annotating for AMR genes used Abricate (https://github.com/tseemann/abricate) with the NCBI 'Bacterial Antimicrobial Resistance Rerefence Gene' database (https://www.ncbi.nlm.nih.gov/bioproject/PRJNA313047).
+Specifically annotating for AMR genes used Abricate (https://github.com/tseemann/abricate) with the NCBI AMRFinder Plus database (https://ftp.ncbi.nlm.nih.gov/pathogen/Antimicrobial_resistance/AMRFinder/data/).
 
 **Core Gene Phylogeny**
 -
