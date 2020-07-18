@@ -1,11 +1,8 @@
 # Plasmid Network Analysis
 
-The following outlines the analysis pipeline for...
+The following outlines the analysis pipeline for the paper _Genomic network analysis of an environmental and livestock IncF plasmid population_ (2020) by Matlock et al.
 
-Relevant data is available on figshare:
-- Plasmid fastas: https://figshare.com/articles/dataset/incf_plasmids_fa/12652196
-- Plasmid metadata:
-- MASH output: https://figshare.com/articles/dataset/plasmid_MASH_csv/12652313
+Relevant plasmid sequences, metadata and MASH output are available on figshare under the DOI https://doi.org/10.6084/m9.figshare.c.5066684.v1
 
 **Sequence Distances**
 -
