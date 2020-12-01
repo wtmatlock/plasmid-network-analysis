@@ -9,14 +9,15 @@ import sklearn.metrics as metric
 def elist_to_graph_threshold(df, t):
     """Converts MASH edgelist to graph object at threshold t"""
     df.columns = ['sequence1', 'sequence2', 'mashdist', 'pvalue', 'hashmatch']
-    G = nx.from_pandas_edgelist(df, 'sequence1', 'sequence2', edge_attr='mashdist')
-    G.remove_edges_from([(u, v, d) for (u, v, d) in G.edges(data=True) if d['mashdist'] > t])
+    df['sim'] = 1 - df['mashdist']
+    G = nx.from_pandas_edgelist(df, 'sequence1', 'sequence2', edge_attr='sim')
+    G.remove_edges_from([(u, v, d) for (u, v, d) in G.edges(data=True) if d['sim'] < t])
     return G
 
 
 def louvain_labels(G):
     """Runs Louvain algorithm on the graph"""
-    partition = community_louvain.best_partition(G, weight='mashdist')  # run louvain
+    partition = community_louvain.best_partition(G, weight='sim')  # run louvain
     partition = pd.DataFrame.from_dict(partition, orient='index')  # convert communities to df
     partition.index.name = 'sequence'  # rename index
     return partition
