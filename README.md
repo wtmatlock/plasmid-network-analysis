@@ -1,6 +1,6 @@
 # Plasmid Network Analysis
 
-This repository outlines the analysis pipeline for the paper *Matlock, W., Chau, K.K., AbuOun, M. et al. Genomic network analysis of environmental and livestock F-type plasmid populations. ISME J (2021). https://doi.org/10.1038/s41396-021-00926-w*
+This repository outlines the analysis pipeline for the paper *Matlock, W. et al. Genomic network analysis of environmental and livestock F-type plasmid populations. ISME J (2021). https://doi.org/10.1038/s41396-021-00926-w*
 
 Relevant plasmid sequences, metadata and Mash output are available on figshare under the DOI https://doi.org/10.6084/m9.figshare.c.5066684.v1
 
