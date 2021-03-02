@@ -1,13 +1,13 @@
 # Plasmid Network Analysis
 
-The following outlines the analysis pipeline for the paper _Genomic network analysis of an environmental and livestock IncF plasmid population_ (2020) by Matlock et al.
+This repository outlines the analysis pipeline for the paper *Matlock, W., Chau, K.K., AbuOun, M. et al. Genomic network analysis of environmental and livestock F-type plasmid populations. ISME J (2021). https://doi.org/10.1038/s41396-021-00926-w*
 
-Relevant plasmid sequences, metadata and MASH output are available on figshare under the DOI https://doi.org/10.6084/m9.figshare.c.5066684.v1
+Relevant plasmid sequences, metadata and Mash output are available on figshare under the DOI https://doi.org/10.6084/m9.figshare.c.5066684.v1
 
 **Sequence Distances**
 -
 
-Plasmid sequence distances are calculated using MASH (https://github.com/marbl/Mash). We used the following command:
+Plasmid sequence distances are calculated using Mash (https://github.com/marbl/Mash). We used the following command:
 ```
 mash triangle -E -s 5000 -k 13 /path/to/fasta.fa > /path/to/edgelist.csv
 ```
