@@ -9,7 +9,7 @@ Relevant plasmid sequences, metadata and Mash output are available on figshare u
 
 Plasmid sequence distances are calculated using Mash (https://github.com/marbl/Mash). We used the following command:
 ```
-mash triangle -E -s 5000 -k 13 /path/to/fasta.fa > /path/to/edgelist.csv
+mash triangle -E -s 5000 -k 13 /path/to/fasta.fa > /path/to/edgelist.tsv
 ```
 This outputs an edge list readable by the Python module NetworkX (https://github.com/networkx/networkx), which can then be written as a weighted network in .gml format. The ```-E``` flag specifies the edge list format. A sketch length (```-s```) of 5000, and _k_-mer length (```-k```) of 13 are also specified.
 
